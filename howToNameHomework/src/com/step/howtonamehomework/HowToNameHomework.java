@@ -13,7 +13,12 @@ public class HowToNameHomework {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner scan = new Scanner(System.in);
+
+        hamework_zad1 first = new hamework_zad1();
+        first.a1();
+         
+        Homework_2zad second = new Homework_2zad();
+        second.a2();
+                
     }
-    
 }
