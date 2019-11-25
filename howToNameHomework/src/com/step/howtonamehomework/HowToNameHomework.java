@@ -19,6 +19,9 @@ public class HowToNameHomework {
          
         Homework_2zad second = new Homework_2zad();
         second.a2();
+        
+        RectangleStar third = new RectangleStar();
+        third.rect();
                 
     }
 }
