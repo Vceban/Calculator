@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.step.calculator;
-
+import java.util.Scanner;
 /**
  *
  * @author 37360
@@ -17,6 +17,22 @@ public class Main {
         System.out.println(calc.division(3, 0));
         System.out.println(calc.minus(3, 2));
         System.out.println(calc.multiply(5, 5));
+        
+        GeometricOperations abc = new GeometricOperations();
+        System.out.println("Perimetr of rectangle = " + abc.trianglePerimetr(1, 2, 3));
+        Game r = new Game();
+        Scanner scan = new Scanner(System.in);
+        int userNumber;
+        do{
+            System.out.println("Enter your digit");
+            userNumber = scan.nextInt();
+            if (userNumber > r.randNumber() || userNumber < r.randNumber())
+                System.out.println("vi ne ygadali, try again");
+            else
+                System.out.println("yes. you win!");
+        }
+        while(userNumber != r.randNumber());
+        System.out.println(r.randNumber());
         
     };
     
