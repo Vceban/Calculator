@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Employee {
     
-    String adress, firstName, lastName;
+    private String adress, firstName, lastName;
     int dateOfBirthday;
     char gender;
     int salary;
@@ -21,15 +21,8 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public void AddEmployees(){
-        Scanner scan = new Scanner(System.in);
-        Employee [] arr;
-        System.out.println("How many people need to add?");
-        int howMany = scan.nextInt();
-        arr = new Employee[howMany];
-        for(int i = 0; i < howMany; i++){
-            System.out.println(arr[i] = new Employee("adress", "first", "last"));
-        }
-        
+    @Override
+    public String toString(){
+        return "Adress: " + adress + "\nFirst name: " + firstName + "\nLast name: " + lastName + "\n\n";
     }
 }
