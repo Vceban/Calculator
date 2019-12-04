@@ -23,15 +23,16 @@ public class Main {
         Game r = new Game();
         Scanner scan = new Scanner(System.in);
         int userNumber;
+        int randNumber = r.randNumber();
         do{
             System.out.println("Enter your digit");
             userNumber = scan.nextInt();
-            if (userNumber > r.randNumber() || userNumber < r.randNumber())
+            if (userNumber > randNumber || userNumber < randNumber)
                 System.out.println("vi ne ygadali, try again");
             else
                 System.out.println("yes. you win!");
         }
-        while(userNumber != r.randNumber());
+        while(userNumber != randNumber);
         System.out.println(r.randNumber());
         
     };
