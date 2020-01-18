@@ -63,17 +63,17 @@ public class EmployeeManager {
         }
     }
     public void searchEmployee() {
-        abc:
+        Scanner search = new Scanner(System.in);
         for (Employee el : empman) {
-            if (el.getFirstName().equals(sc.nextLine())) {
+            if (el.getFirstName().equals(search.nextLine())) {
                 System.out.println("---");
-                break abc;
-            } else if (el.getAdress().equals(sc.nextLine())) {
+                break;
+            } else if (el.getAdress().equals(search.nextLine())) {
                 System.out.println("//");
-                break abc;
-            } else if (el.getLastName().equals(sc.nextLine())) {
+                break;
+            } else if (el.getLastName().equals(search.nextLine())) {
                 System.out.println("..");
-                break abc;
+                break;
             }
         }
     }
